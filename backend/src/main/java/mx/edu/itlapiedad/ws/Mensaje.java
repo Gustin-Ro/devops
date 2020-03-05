@@ -62,6 +62,9 @@ public class Mensaje {
 	}
 	
 	// Hola
-	
+	@GetMapping("Suma/{numero1}/{numero2}")
+		public float Suma_num(@PathVariable float numero1,@PathVariable float numero2) {
+			return numero1+numero2;
+	}
 	
 }
